@@ -16,7 +16,7 @@ namespace MVCApplication.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(User login)
+        public ActionResult Login(User login)
         {
             if (ModelState.IsValid)
             {
@@ -41,7 +41,7 @@ namespace MVCApplication.Controllers
             }
             return View(login);
         }
-        public ActionResult SignUp()
+        public ActionResult Signup()
         {
             return View();
         }

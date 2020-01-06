@@ -1,118 +1,138 @@
-﻿
+﻿@model MVCApplication.Models.User
+
 @{
-    ViewBag.Title = "Signup";
+    ViewBag.Title = "Index";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
-<body>
-
-    @using (Html.BeginForm())
-    {
-    <div>
-
-        <div class="">
-            <h2> Employee Registration </h2>
-        </div>
-       
-        <div>
-            <label>Employee Status: </label>
-            <br>
-            <label>Employee ID: </label>
-            <input id="empid" name="empid" required="required" type="number" value="">
-            <br>
-            <label>SSS Number: </label>
-            <input id="sssid" name="sssid" required="required" type="number" value="">
-            <br>
-            <label>Tin Number: </label>
-            <input id="tinum" name="tinum" required="required" type="number" value="">
-            <br>
-            <label>Date Employed: </label>
-            <input id="datemp" name="datemp" type="text" value="">
-            <br>
-            <label>Date Employed: </label>
-            <ul>
-                <li>
-                    <label>From: </label> <input id="" name="" type="text" value="">
-                    <br>
-                    <label>To: </label> <input id="" name="" type="text" value="">
-                </li>
-            </ul>
-
-            <label>Signature: </label>
 
 
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
 
-
-
-
-        </div>
-    </div>
-
-        <div>
-            <h2> Login Information</h2>
-
-        </div>
-
-        <div>
-            <label>UserName: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Email: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Confirm Email: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Password: </label>
-            <input id="" name="" type="password" value="">
-            <br>
-            <label>Confirm Password: </label>
-            <input id="" name="" type="password" value="">
-        </div>
-
-        <div>
-            <h2> Contact Details</h2>
-        </div>
-
-        <div>
-            <label>Image: </label>
-            <br>
-            <label>First name: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Middle name: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Last name: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Date of Birth: </label>
-            <input id="" name="" type="number" value="">
-            <br>
-        </div>
-
-        <div>
-
-            <h2>In case of emergency, please notify: </h2>
-            <label>Name: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Address: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-            <label>Contact No: </label>
-            <input id="" name="" type="text" value="">
-            <br>
-
-            <div class="loginbtn">
-                <input type="submit" value="CREATE" class="btn btn-success" />
-
+    <fieldset>
+        <legend>Employee Registration</legend>
+        @Html.AntiForgeryToken()
+        @if (ViewBag.Message != null)
+        {
+            <div style="border:solid 1px green">
+                @ViewBag.Message
             </div>
+        }
+        <div class="editor-label">
+            @Html.Label("Employee Status:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.employeeStatus)
+            @Html.ValidationMessageFor(model => model.employeeStatus)
         </div>
 
-        
-    }
-</body>
-</html>   
+        <div class="editor-label">
+            @Html.Label("Employee ID:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.employeeId)
+            @Html.ValidationMessageFor(model => model.employeeId)
+        </div>
+        <div class="editor-label">
+            @Html.Label("SSS Number:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.sssnum)
+            @Html.ValidationMessageFor(model => model.sssnum)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("TIN Number:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tinnum)
+            @Html.ValidationMessageFor(model => model.tinnum)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Date Employed:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dateEmployed)
+            @Html.ValidationMessageFor(model => model.dateEmployed)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("From:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dateFrom)
+            @Html.ValidationMessageFor(model => model.dateFrom)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("To:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dateTo)
+            @Html.ValidationMessageFor(model => model.dateTo)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Signature:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.signature)
+            @Html.ValidationMessageFor(model => model.signature)
+        </div>
+        <br />
+        <legend> Log In Information</legend>
+
+        <div class="editor-label">
+            @Html.Label("Username:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.userName)
+            @Html.ValidationMessageFor(model => model.userName)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Email Address:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Confirm Email:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Password:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.password)
+            @Html.ValidationMessageFor(model => model.password)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Confirm Password:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.password)
+            @Html.ValidationMessageFor(model => model.password)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Main Menu", "Index", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

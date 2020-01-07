@@ -32,7 +32,7 @@ namespace MVCApplication.Controllers
                 {
                     Session["userName"] = user.FirstOrDefault().userName;
 
-                    return Redirect("/Login/Signup");
+                    return Redirect("Signup");
                 }
                 else
                 {

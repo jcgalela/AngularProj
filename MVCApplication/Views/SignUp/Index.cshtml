@@ -1,7 +1,9 @@
-﻿@model MVCApplication.Models.SignUp
+﻿
+
+@model MVCApplication.Models.SignUp
 
 @{
-    ViewBag.Title = "Signup";
+    ViewBag.Title = "Index";
 }
 
 
@@ -84,44 +86,44 @@
         <legend> Log In Information</legend>
 
         @*<div class="editor-label">
-            @Html.Label("Username:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.userName)
-            @Html.ValidationMessageFor(model => model.userName)
-        </div>
+                @Html.Label("Username:")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.userName)
+                @Html.ValidationMessageFor(model => model.userName)
+            </div>
 
-        <div class="editor-label">
-            @Html.Label("Email Address:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.email)
-            @Html.ValidationMessageFor(model => model.email)
-        </div>
+            <div class="editor-label">
+                @Html.Label("Email Address:")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.email)
+                @Html.ValidationMessageFor(model => model.email)
+            </div>
 
-        <div class="editor-label">
-            @Html.Label("Confirm Email:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.email)
-            @Html.ValidationMessageFor(model => model.email)
-        </div>
+            <div class="editor-label">
+                @Html.Label("Confirm Email:")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.email)
+                @Html.ValidationMessageFor(model => model.email)
+            </div>
 
-        <div class="editor-label">
-            @Html.Label("Password:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.password)
-            @Html.ValidationMessageFor(model => model.password)
-        </div>
+            <div class="editor-label">
+                @Html.Label("Password:")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.password)
+                @Html.ValidationMessageFor(model => model.password)
+            </div>
 
-        <div class="editor-label">
-            @Html.Label("Confirm Password:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.password)
-            @Html.ValidationMessageFor(model => model.password)
-        </div>*@
+            <div class="editor-label">
+                @Html.Label("Confirm Password:")
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.password)
+                @Html.ValidationMessageFor(model => model.password)
+            </div>*@
 
         <p>
             <input type="submit" value="Create" />
@@ -136,3 +138,4 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+

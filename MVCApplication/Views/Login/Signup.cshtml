@@ -1,7 +1,7 @@
-﻿@model MVCApplication.Models.User
+﻿@model MVCApplication.Models.SignUp
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Signup";
 }
 
 
@@ -83,7 +83,7 @@
         <br />
         <legend> Log In Information</legend>
 
-        <div class="editor-label">
+        @*<div class="editor-label">
             @Html.Label("Username:")
         </div>
         <div class="editor-field">
@@ -121,7 +121,7 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.password)
             @Html.ValidationMessageFor(model => model.password)
-        </div>
+        </div>*@
 
         <p>
             <input type="submit" value="Create" />

@@ -16,7 +16,7 @@ namespace MVCApplication.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(User login)
+        public ActionResult Index(User login)
         {
             if (ModelState.IsValid)
             {
@@ -32,7 +32,7 @@ namespace MVCApplication.Controllers
                 {
                     Session["userName"] = user.FirstOrDefault().userName;
 
-                    return Redirect("Signup");
+                    return Redirect("/Login/Signup");
                 }
                 else
                 {

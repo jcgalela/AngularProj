@@ -21,7 +21,6 @@ namespace MVCApplication.Models
         [StringLength(10)]
         public string Password { get; set; }
 
-      
 
 
         [Table("Employee")]

@@ -223,7 +223,6 @@ C:\Users\publici\Desktop\AngularProj\MVCApplication\bin\System.Web.WebPages.Razo
 C:\Users\publici\Desktop\AngularProj\MVCApplication\bin\Newtonsoft.Json.xml
 C:\Users\publici\Desktop\AngularProj\MVCApplication\bin\Antlr3.Runtime.pdb
 C:\Users\publici\Desktop\AngularProj\MVCApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\publici\Desktop\AngularProj\MVCApplication\obj\Debug\MVCApplication.csprojAssemblyReference.cache
 C:\Users\publici\Desktop\AngularProj\MVCApplication\obj\Debug\MVCApplication.csproj.CopyComplete
 C:\Users\publici\Desktop\AngularProj\MVCApplication\obj\Debug\MVCApplication.dll
 C:\Users\publici\Desktop\AngularProj\MVCApplication\obj\Debug\MVCApplication.pdb

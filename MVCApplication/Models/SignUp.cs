@@ -9,6 +9,7 @@ namespace MVCApplication.Models
 {
     public class SignUp
     {
+        [Required(ErrorMessage = "Please enter user name.")]
 
         public string employeeId { get; set; }
 
@@ -31,9 +32,12 @@ namespace MVCApplication.Models
 
         public string image { get; set; }
 
+        public string userName { get; set; }
+
+        public string password { get; set; }
 
         [Table("Employee")]
-        public class Employee
+        public class Employees
         {
             [Key]
             [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
@@ -41,6 +45,27 @@ namespace MVCApplication.Models
             public string employeeId { get; set; }
 
             public string firstName { get; set; }
+            public string middleName { get; set; }
+            public string lastName { get; set; }
+            public string birthday { get; set; }
+            public string emergencyName { get; set; }
+            public string emergencyAddress { get; set; }
+            public string emergencyContact { get; set; }
+            public string employeeStatus { get; set; }
+            public string sssnum { get; set; }
+            public string tinnum { get; set; }
+            public string dateEmployed { get; set; }
+            public string dateFrom { get; set; }
+            public string dateTo { get; set; }
+            public string signature { get; set; }
+
+            public string email { get; set; }
+
+            public string image { get; set; }
+
+            public string userName { get; set; }
+
+            public string password { get; set; }
 
         }
     }

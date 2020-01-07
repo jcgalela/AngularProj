@@ -23,112 +23,177 @@
         <div class="editor-label">
             @Html.Label("Employee Status:")
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.employeeStatus)
-            @Html.ValidationMessageFor(model => model.employeeStatus)
-        </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.employeeStatus)
+                    @Html.ValidationMessageFor(model => model.employeeStatus)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("Employee ID:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.employeeId)
-            @Html.ValidationMessageFor(model => model.employeeId)
-        </div>
-        <div class="editor-label">
-            @Html.Label("SSS Number:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.sssnum)
-            @Html.ValidationMessageFor(model => model.sssnum)
-        </div>
+                <div class="editor-label">
+                    @Html.Label("Employee ID:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.employeeId)
+                    @Html.ValidationMessageFor(model => model.employeeId)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("SSS Number:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.sssnum)
+                    @Html.ValidationMessageFor(model => model.sssnum)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("TIN Number:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.tinnum)
-            @Html.ValidationMessageFor(model => model.tinnum)
-        </div>
+                <div class="editor-label">
+                    @Html.Label("TIN Number:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.tinnum)
+                    @Html.ValidationMessageFor(model => model.tinnum)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("Date Employed:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.dateEmployed)
-            @Html.ValidationMessageFor(model => model.dateEmployed)
-        </div>
+                <div class="editor-label">
+                    @Html.Label("Date Employed:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.dateEmployed)
+                    @Html.ValidationMessageFor(model => model.dateEmployed)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("From:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.dateFrom)
-            @Html.ValidationMessageFor(model => model.dateFrom)
-        </div>
+                <div class="editor-label">
+                    @Html.Label("From:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.dateFrom)
+                    @Html.ValidationMessageFor(model => model.dateFrom)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("To:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.dateTo)
-            @Html.ValidationMessageFor(model => model.dateTo)
-        </div>
+                <div class="editor-label">
+                    @Html.Label("To:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.dateTo)
+                    @Html.ValidationMessageFor(model => model.dateTo)
+                </div>
 
-        <div class="editor-label">
-            @Html.Label("Signature:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.signature)
-            @Html.ValidationMessageFor(model => model.signature)
-        </div>
-        <br />
-        <legend> Log In Information</legend>
+                <div class="editor-label">
+                    @Html.Label("Signature:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.signature)
+                    @Html.ValidationMessageFor(model => model.signature)
+                </div>
+          
+            <br />
+          
+                <legend> Contact Details</legend>
 
-        @*<div class="editor-label">
-                @Html.Label("Username:")
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.userName)
-                @Html.ValidationMessageFor(model => model.userName)
-            </div>
+                <div class="editor-label">
+                    @Html.Label("Image:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.image)
+                    @Html.ValidationMessageFor(model => model.image)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("First Name:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.firstName)
+                    @Html.ValidationMessageFor(model => model.firstName)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("Middle Name:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.middleName)
+                    @Html.ValidationMessageFor(model => model.middleName)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("Last Name:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.lastName)
+                    @Html.ValidationMessageFor(model => model.lastName)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("Date of Birth:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.birthday)
+                    @Html.ValidationMessageFor(model => model.birthday)
+                </div>
+                <h4>In case of emergency, Please notify:</h4>
 
-            <div class="editor-label">
-                @Html.Label("Email Address:")
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.email)
-                @Html.ValidationMessageFor(model => model.email)
-            </div>
+                <div class="editor-label">
+                    @Html.Label("Name:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.emergencyName)
+                    @Html.ValidationMessageFor(model => model.emergencyName)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("Address:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.emergencyAddress)
+                    @Html.ValidationMessageFor(model => model.emergencyAddress)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("Contact No:")
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.emergencyContact)
+                    @Html.ValidationMessageFor(model => model.emergencyContact)
+                </div>
 
-            <div class="editor-label">
-                @Html.Label("Confirm Email:")
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.email)
-                @Html.ValidationMessageFor(model => model.email)
-            </div>
+               
+                    <legend> Log In Information</legend>
 
-            <div class="editor-label">
-                @Html.Label("Password:")
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.password)
-                @Html.ValidationMessageFor(model => model.password)
-            </div>
+                    <div class="editor-label">
+                        @Html.Label("Username:")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.userName)
+                        @Html.ValidationMessageFor(model => model.userName)
+                    </div>
 
-            <div class="editor-label">
-                @Html.Label("Confirm Password:")
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.password)
-                @Html.ValidationMessageFor(model => model.password)
-            </div>*@
+                    <div class="editor-label">
+                        @Html.Label("Email Address:")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.email)
+                        @Html.ValidationMessageFor(model => model.email)
+                    </div>
 
-        <p>
-            <input type="submit" value="Create" />
-        </p>
-    </fieldset>
+                    <div class="editor-label">
+                        @Html.Label("Confirm Email:")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.email)
+                        @Html.ValidationMessageFor(model => model.email)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.Label("Password:")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.password)
+                        @Html.ValidationMessageFor(model => model.password)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.Label("Confirm Password:")
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.password)
+                        @Html.ValidationMessageFor(model => model.password)
+                    </div>
+           
+
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+</fieldset>
 }
 
 <div>

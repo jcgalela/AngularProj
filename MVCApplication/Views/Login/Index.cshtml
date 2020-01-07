@@ -20,7 +20,7 @@
                 <td>
                     @Html.EditorFor(model => model.UserName)
                     <div style="height: 20px;">
-                        @Html.ValidationMessageFor(model => model.UserName)
+                        @Html.ValidationMessageFor(model => model.UserName,"", new { @class = "text-danger" })
                     </div>
                 </td>
             </tr>
@@ -31,7 +31,7 @@
                 <td>
                     @Html.EditorFor(model => model.Password)
                     <div style="height: 20px;">
-                        @Html.ValidationMessageFor(model => model.Password)
+                        @Html.ValidationMessageFor(model => model.Password,"", new { @class = "text-danger" })
                     </div>
                 </td>
             </tr>

@@ -21,7 +21,7 @@ namespace MVCApplication.Controllers
             if (ModelState.IsValid)
             {
                 EISEntities db = new EISEntities();
-                var user = (from userlist in db.Employee
+                var user = (from userlist in db.Employees
                             where userlist.userName == login.UserName && userlist.password == login.Password
                             select new
                             {

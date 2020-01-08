@@ -303,3 +303,4 @@ C:\Users\turaj\source\repos\AngularProj\MVCApplication\obj\Debug\MVCApplication.
 C:\Users\turaj\source\repos\AngularProj\MVCApplication\obj\Debug\MVCApplication.csproj.CopyComplete
 C:\Users\turaj\source\repos\AngularProj\MVCApplication\obj\Debug\MVCApplication.dll
 C:\Users\turaj\source\repos\AngularProj\MVCApplication\obj\Debug\MVCApplication.pdb
+C:\Users\publici\Desktop\AngularProj\MVCApplication\obj\Debug\MVCApplication.csprojAssemblyReference.cache

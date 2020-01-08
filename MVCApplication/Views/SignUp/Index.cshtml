@@ -25,7 +25,7 @@
         </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.employeeStatus)
-                    @Html.ValidationMessageFor(model => model.employeeStatus)
+                    @Html.ValidationMessageFor(model => model.employeeStatus,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -33,14 +33,14 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.employeeId)
-                    @Html.ValidationMessageFor(model => model.employeeId)
+                    @Html.ValidationMessageFor(model => model.employeeId,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("SSS Number:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.sssnum)
-                    @Html.ValidationMessageFor(model => model.sssnum)
+                    @Html.ValidationMessageFor(model => model.sssnum,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.tinnum)
-                    @Html.ValidationMessageFor(model => model.tinnum)
+                    @Html.ValidationMessageFor(model => model.tinnum,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.dateEmployed)
-                    @Html.ValidationMessageFor(model => model.dateEmployed)
+                    @Html.ValidationMessageFor(model => model.dateEmployed,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.dateFrom)
-                    @Html.ValidationMessageFor(model => model.dateFrom)
+                    @Html.ValidationMessageFor(model => model.dateFrom,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.dateTo)
-                    @Html.ValidationMessageFor(model => model.dateTo)
+                    @Html.ValidationMessageFor(model => model.dateTo,"", new { @class = "text-danger" })
                 </div>
 
                 <div class="editor-label">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.signature)
-                    @Html.ValidationMessageFor(model => model.signature)
+                    @Html.ValidationMessageFor(model => model.signature,"", new { @class = "text-danger" })
                 </div>
           
             <br />
@@ -92,35 +92,35 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.image)
-                    @Html.ValidationMessageFor(model => model.image)
+                    @Html.ValidationMessageFor(model => model.image,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("First Name:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.firstName)
-                    @Html.ValidationMessageFor(model => model.firstName)
+                    @Html.ValidationMessageFor(model => model.firstName,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("Middle Name:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.middleName)
-                    @Html.ValidationMessageFor(model => model.middleName)
+                    @Html.ValidationMessageFor(model => model.middleName,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("Last Name:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.lastName)
-                    @Html.ValidationMessageFor(model => model.lastName)
+                    @Html.ValidationMessageFor(model => model.lastName,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("Date of Birth:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.birthday)
-                    @Html.ValidationMessageFor(model => model.birthday)
+                    @Html.ValidationMessageFor(model => model.birthday,"", new { @class = "text-danger" })
                 </div>
                 <h4>In case of emergency, Please notify:</h4>
 
@@ -129,21 +129,21 @@
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.emergencyName)
-                    @Html.ValidationMessageFor(model => model.emergencyName)
+                    @Html.ValidationMessageFor(model => model.emergencyName,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("Address:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.emergencyAddress)
-                    @Html.ValidationMessageFor(model => model.emergencyAddress)
+                    @Html.ValidationMessageFor(model => model.emergencyAddress,"", new { @class = "text-danger" })
                 </div>
                 <div class="editor-label">
                     @Html.Label("Contact No:")
                 </div>
                 <div class="editor-field">
                     @Html.EditorFor(model => model.emergencyContact)
-                    @Html.ValidationMessageFor(model => model.emergencyContact)
+                    @Html.ValidationMessageFor(model => model.emergencyContact,"", new { @class = "text-danger" })
                 </div>
 
                
@@ -154,7 +154,7 @@
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.userName)
-                        @Html.ValidationMessageFor(model => model.userName)
+                        @Html.ValidationMessageFor(model => model.userName,"", new { @class = "text-danger" })
                     </div>
 
                     <div class="editor-label">
@@ -162,15 +162,15 @@
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.email)
-                        @Html.ValidationMessageFor(model => model.email)
+                        @Html.ValidationMessageFor(model => model.email,"", new { @class = "text-danger" })
                     </div>
 
                     <div class="editor-label">
                         @Html.Label("Confirm Email:")
                     </div>
                     <div class="editor-field">
-                        @Html.EditorFor(model => model.email)
-                        @Html.ValidationMessageFor(model => model.email)
+                        @Html.EditorFor(model => model.Confirmemail)
+                        @Html.ValidationMessageFor(model => model.Confirmemail,"", new { @class = "text-danger" })
                     </div>
 
                     <div class="editor-label">
@@ -178,15 +178,15 @@
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.password)
-                        @Html.ValidationMessageFor(model => model.password)
+                        @Html.ValidationMessageFor(model => model.password,"", new { @class = "text-danger" })
                     </div>
 
                     <div class="editor-label">
                         @Html.Label("Confirm Password:")
                     </div>
                     <div class="editor-field">
-                        @Html.EditorFor(model => model.password)
-                        @Html.ValidationMessageFor(model => model.password)
+                        @Html.EditorFor(model => model.Confirmpassword)
+                        @Html.ValidationMessageFor(model => model.Confirmpassword,"", new { @class = "text-danger" })
                     </div>
            
 

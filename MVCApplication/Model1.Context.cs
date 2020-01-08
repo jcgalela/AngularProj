@@ -25,6 +25,6 @@ namespace MVCApplication
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
